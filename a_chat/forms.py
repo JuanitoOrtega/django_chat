@@ -9,7 +9,7 @@ class ChatmessageCreateForm(ModelForm):
         fields = ['body']
         widgets = {
             'body' : forms.TextInput(attrs={
-                'placeholder': 'Add message ...', 'class': 'p-4 text-black', 'maxlength' : '300', 'autofocus': True 
+                'placeholder': 'Añadir mensaje...', 'class': 'p-4 text-black', 'maxlength' : '300', 'autofocus': True 
             }),
         }
         
@@ -20,9 +20,9 @@ class NewGroupForm(ModelForm):
         fields = ['groupchat_name']
         widgets = {
             'groupchat_name' : forms.TextInput(attrs={
-                'placeholder': 'Add name ...', 
-                'class': 'p-4 text-black', 
-                'maxlength' : '300', 
+                'placeholder': 'Añadir nombre...',
+                'class': 'p-4 text-black',
+                'maxlength' : '300',
                 'autofocus': True,
             }),
         }

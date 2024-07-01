@@ -480,3 +480,6 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/python,venv,dotenv,pycharm,django,git,windows,linux,macos
+
+# Custom ignore
+migrations/

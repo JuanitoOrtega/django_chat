@@ -6,7 +6,7 @@ import os
 
 
 class ChatGroup(models.Model):
-    group_name = models.CharField(max_length=120, unique=True, default=shortuuid.uuid, verbose_name="Nombre del grupo")
+    group_name = models.CharField(max_length=120, unique=True, verbose_name="Nombre del grupo")
     groupchat_name = models.CharField(max_length=128, null=True, blank=True, verbose_name="Nombre del grupo")
     admin = models.ForeignKey(User, related_name='groupchats', blank=True, null=True, on_delete=models.SET_NULL, verbose_name="Administrador")
     users_online = models.ManyToManyField(User, related_name='online_in_groups', blank=True, verbose_name="Usuarios en línea")
